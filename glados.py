@@ -33,6 +33,6 @@ if __name__ == '__main__':
             # sendContent += email+'----'+mess+'----剩余('+time+')天\n' 
         else:
             print('cookie已失效')  # 日志输出
-            sendContent = email + '----'+'cookie已失效'
+            sendContent = 'cookie已失效'
             requests.get('http://www.pushplus.plus/send?token=' + sckey + '&content='+sendContent)
         #--------------------------------------------------------------------------------------------------------#   
